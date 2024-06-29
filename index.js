@@ -218,17 +218,17 @@ alert(result2);
 // Crear una función que calcule el promedio de un conjunto de calificaciones almacenados en un array. 
 // La función debe recibir el array y devolver únicamente la parte entera del promedio.
 
-function calculateNumbers(grades) {
-    if (grades.length === 0) {
+function calculateNumbers(nums) {
+    if (nums.length === 0) {
         return 0; 
     }
     let suma = 0;
-    for (let i = 0; i < grades.length; i++) {
-        suma += grades[i];
+    for (let i = 0; i < nums.length; i++) {
+        suma += nums[i];
     }
-    let average = suma / grades.length;
+    let average = suma / nums.length;
     return Math.floor(average);
 }
-let grades = [85, 90, 92, 88, 95];
-let average2 = calculateNumbers(grades);
+let nums = [85, 90, 92, 88, 95];
+let average2 = calculateNumbers(nums);
 alert("El promedio de las calificaciones es: " + average2); 
