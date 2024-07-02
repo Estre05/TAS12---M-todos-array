@@ -10,7 +10,7 @@ function filterNumbers(arr) {
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] > 10.00) {
             let redondeado = Math.round(arr[i] * 100) / 100;
-            let redondeadoStr = redondeado.toString();
+            let redondeado2 = redondeado.toString();
             resultado.push(redondeadoStr);
         }
     }
