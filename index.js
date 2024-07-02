@@ -209,7 +209,6 @@ function filtersubjects(subject, level) {
 
     return namesubjects;
 }
-// Ejemplo de uso de la función
 let levelnumber = 1;
 let result2 = filtersubjects(subject, levelnumber);
 alert(result2);
