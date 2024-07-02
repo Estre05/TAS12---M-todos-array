@@ -9,9 +9,8 @@ function filterNumbers(arr) {
 
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] > 10.00) {
-            let redondeado = Math.round(arr[i] * 100) / 100;
-            let redondeado2 = redondeado.toString();
-            resultado.push(redondeado2);
+            let redondeado = arr[i].toFixed(2);
+            resultado.push(redondeado);
         }
     }
 
@@ -20,7 +19,6 @@ function filterNumbers(arr) {
 let arr = [13.676767, 3.123432, 5.34543543, 10.3452345];
 let result = filterNumbers(arr);
 alert(result);
-
 
 // EJERCICIO 2
 // Crear un array de objetos con la informacion de las asignaturas de la carrera de Desarrollo de software.  
