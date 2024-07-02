@@ -11,7 +11,7 @@ function filterNumbers(arr) {
         if (arr[i] > 10.00) {
             let redondeado = Math.round(arr[i] * 100) / 100;
             let redondeado2 = redondeado.toString();
-            resultado.push(redondeadoStr);
+            resultado.push(redondeado2);
         }
     }
 
